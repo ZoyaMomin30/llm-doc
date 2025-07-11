@@ -1,17 +1,14 @@
 export default function ComponentsSection() {
   return (
     <section id="components" className="scroll-mt-20">
-      <h1 className="text-4xl font-bold mb-6">Components</h1>
+      <h1 className="text-4xl font-bold mb-6">Sorting Values</h1>
       <p className="text-xl mb-4">
-        Our library provides a set of reusable components to help you build your application faster. Here&apos;s an
-        overview of some key components:
+        After our data has been cleaned and ready to analyse. The next of the few important steps that we go for is Data sorting.
       </p>
-
 
        <h2 className="text-2xl font-semibold mt-8 mb-4">Button</h2>
       <p className="mb-4">
-        The Button component is a versatile and customizable button that can be used for various actions in your
-        application.
+        This refers to the analysing of the data based on their values being largest, smallest or average, which refers to the calculations of Maximum, Minimum, Aggregate or etc.
       </p>
       <pre className="bg-muted p-4 rounded-md mb-4">
         <code>{`import { Button } from '@our-company/package';

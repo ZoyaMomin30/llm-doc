@@ -4,7 +4,7 @@ import GettingStartedSection from "@/components/sections/getting-started-section
 import ComponentsSection from "@/components/sections/components-section"
 
 export const metadata: Metadata = {
-  title: "Documentation | Minimal Docs Site",
+  title: "Data Science Documentation",
   description: "Complete documentation for our library",
 }
 
@@ -13,11 +13,8 @@ export default function Home() {
     <main className="mx-auto max-w-3xl space-y-16">
       <div id="introduction" className="scroll-mt-20">
         <Introduction />
-
       </div>
-
       <GettingStartedSection />
-
       <ComponentsSection />
 
     </main>

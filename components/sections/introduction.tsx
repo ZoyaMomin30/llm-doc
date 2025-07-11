@@ -5,31 +5,53 @@ export default function Introduction() {
       <p className="mb-4">
         This is a documentation site that will help you go from beginner to intermediate level. It will cover major aspects and contents revolving around Data Science. Lets get started !
       </p>
-      <h2 className="mb-4 mt-8 text-2xl font-semibold">Features</h2>
+      <h2 className="mb-4 mt-8 text-2xl font-semibold">The topics that will be covered in here will be:</h2>
       <ul className="mb-4 list-inside list-disc space-y-1">
-        <li>Clean and minimal design</li>
-        <li>Dark mode toggle with system preference detection</li>
-        <li>Responsive layout</li>
-        <li>Easy navigation with shadcn sidebar</li>
-        <li>Built with Next.js App Router</li>
-        <li>Smooth scrolling navigation</li>
-        <li>Single-page documentation format</li>
+        <li>Introduction</li>
+
       </ul>
 
       <h2 className="mb-4 mt-8 text-2xl font-semibold">Getting Started</h2>
       <p className="mb-4">
-        To get started with our documentation, please navigate through the sections using the sidebar on the left.
-        Here&apos;s a quick overview of the available sections:
+        These are the few basic commands that help you to get the overall view of the .csv data. 
+        These are the initial steps to get to know the data :
       </p>
+      <p>Read the data. </p>
+      <pre className="bg-muted p-4 rounded-md mb-4">
+        <code>import pandas as pd</code>
+        <br></br>
+        <code>df = pd.read_csv('path_to_file')</code>
+      </pre>
+      <p>These are the few basic commands that help you to get the overall view of the .csv data. </p>
+      <br />
       <ul className="mb-4 list-inside list-disc space-y-1">
         <li>
-          <strong>Getting Started</strong>: Learn how to install and set up our library
+          <strong>df.head()</strong>: Displays Top 5 rows
         </li>
         <li>
-          <strong>Components</strong>: Explore the available components and how to use them
+          <strong>df.tail()</strong>: Displays Last 5 rows
         </li>
         <li>
-          <strong>API Reference</strong>: Detailed information about our API and its methods
+          <strong>df.shape</strong>: Prints number of Rows and Columns e.g : (100, 14)
+          {/* <img src="" alt="" /> */}
+        </li>
+        <li>
+          <strong>df.sample(5)</strong>: Displays any random 5 rows
+        </li>
+        <li>
+          <strong>df.columns()</strong>: Prints all the columns e.g., Index(['col1', 'col2', ...])
+        </li>
+        <li>
+          <strong>df.index</strong>: Shows the index (row labels) e.g.,RangeIndex(start=0, stop=100, step=1)
+        </li>
+         <li>
+          <strong>df.info</strong>:	Summary of DataFrame: number of non-null entries, data types, memory usage
+        </li>
+        <li>
+          <strong>df.describe()</strong>:	Statistical summary for numerical columns (mean, std, min, max, etc.)
+        </li>
+        <li>
+          <strong>df.dtypes</strong>: Shows data types of each column
         </li>
       </ul>
       <p className="mb-4">
