@@ -21,7 +21,7 @@ import { ThemeToggle } from "./theme-toggle"
 
 const navItems = [
   { title: "Introduction", url: "#introduction" },
-  { title: "Data Cleaning", url: "#getting-started" },
+  { title: "Hugging Face", url: "#huggingface" },
   { title: "Sorting Values", url: "#components" },
   { title: "API Reference", url: "#api-reference" },
 ]

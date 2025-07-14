@@ -1,10 +1,18 @@
-export default function GettingStartedSection() {
+export default function HuggingFace() {
   return (
-    <section id="getting-started" className="scroll-mt-20">
+    <section id="huggingface" className="scroll-mt-20">
       <h1 className="text-4xl font-bold mb-6">Hugging Face</h1>
-      <p className="text-sm mb-4">
-        The csv data file that we have doesnt always contain complete and reliable values. It is important that we make note of these values remove or change them before we start our data analysing process. 
-      </p>
+      <p className="text-lg mb-4">
+        Hugging Face is a company and a platform that makes it easy for anyone to use and share AI and machine learning models, especially for things like: Chatbots, Text analysis , Image recognition , Audio and video tasks.<br /></p>
+        <ul className="mb-4 list-inside list-disc space-y-1">
+          <li>Translate languages</li>
+          <li>Summarize text</li>
+          <li>Generate images</li>
+        </ul>
+        <br />
+        Instead of building these complex models from scratch, you can go to Hugging Face, find ready-made models, and use them directly in your code or even test them on the website.
+
+      
 
       <h2 className="text-2xl font-semibold mt-8 mb-4">Junk or no Data</h2>
       <p className="mb-4">To avoid problems later on we can look for values that contain NAN (Not a Number). These can contain null values or just NAN which is a string value. It may contain duplicate, wrong, null or data values with different datatypes. It is important to handle all these for smooth data analysis further. </p>

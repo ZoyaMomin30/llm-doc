@@ -44,3 +44,25 @@ npm install
 ```
 npm run dev
 ```
+
+##to change the remote repository URL
+
+ 1. Check current origin
+ ```
+ git remote -v 
+ ```
+ You’ll see something like:
+ ```
+ origin  https://github.com/username/old-repo.git (fetch)
+origin  https://github.com/username/old-repo.git (push)
+ ```
+
+ 2. Change the origin
+ ```
+ git remote set-url origin NEW_URL
+ ```
+
+  3. Verify the change
+  ```
+  git remote -v
+  ```

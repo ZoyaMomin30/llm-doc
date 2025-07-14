@@ -1,6 +1,6 @@
 import type { Metadata } from "next"
 import Introduction from "@/components/sections/introduction"
-import GettingStartedSection from "@/components/sections/getting-started-section"
+import HuggingFace from "@/components/sections/huggingface"
 import ComponentsSection from "@/components/sections/components-section"
 
 export const metadata: Metadata = {
@@ -14,7 +14,7 @@ export default function Home() {
       <div id="introduction" className="scroll-mt-20">
         <Introduction />
       </div>
-      <GettingStartedSection />
+      <HuggingFace />
       <ComponentsSection />
     </main>
   )

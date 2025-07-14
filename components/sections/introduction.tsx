@@ -49,12 +49,38 @@ export default function Introduction() {
       </pre>
 
       <div>
-        <h2>3 Dimensions of LLM Engineering</h2>
+        <h2 className="text-2xl"><b>3 Dimensions of LLM Engineering</b></h2>
       </div>
+      <br />
+      <strong className="text-lg">1. Models:</strong> : Think of models as the brains that learn to understand and generate language.These are trained on huge amounts of text so they can: Answer questions, Write stories, Translate text, Summarize documents and many more things. 
 
+      <ul className="mb-4 list-inside list-disc space-y-1">
+        <li><b>Open-source</b> e.g LLaMA</li>
+        <li><b>Closed-source</b></li>
+        <li><b>Multimodal</b></li>
+        <li><b>Architecture</b></li>
+        In Hugging Face, you can find these models and even smaller specialized ones.
+      </ul>
 
+      <strong className="text-lg">2. Tools:</strong> :Tools are software libraries, frameworks, or services that help developers and data scientists work with models.
+            <ul className="mb-4 list-inside list-disc space-y-1">
+        <li><b>HuggingFace :</b>  Lets you easily load and run LLMs.</li>
+        <li><b>Langchain :</b>  Helps you build chatbots or apps that combine LLMs with other data (like your database or APIs).</li>
+        <li><b>Gradio</b></li>
+        <li><b>Modal</b></li>
+        <li><b>Vector databases (like Pinecone, Chroma):</b> Help LLMs remember and search through large collections of text (for Retrieval-Augmented Generation, or RAG).</li>
+        <li>OpenAI Python/JS SDK: Directly talk to OpenAI models in your code.</li>
+        These tools make life easier: instead of writing everything from scratch, you can just plug things in and start building.
+      </ul>
 
-      
+        <strong className="text-lg">3. Techniques:</strong> :Techniques are methods or strategies that help us: Make LLMs better, Adapt them to new tasks, Use them more efficiently. We use these techniques with the LLM's to get more accurate models according to the requirements if out task.  
+        <ul className="mb-4 list-inside list-disc space-y-1">
+        <li><b>Fine-tuning:</b> Continue training a model on special data so it becomes better at a specific task (e.g., legal text, medical text).</li>
+        <li><b>Prompt engineering:</b> Writing the best possible instructions or questions to get the model to do what you want.</li>
+        <li><b>RAG (Retrieval-Augmented Generation):</b> Combine the model with a search over external documents to give better answers.</li>
+        <li><b>Distillation:</b> Make smaller, faster models that behave similarly to big ones.</li>
+        <li><b>Few-shot & zero-shot learning:</b> Teach the model new tasks with very few (or no) examples by crafting clever prompts.</li>
+      </ul>
     </section>
   )
 }
