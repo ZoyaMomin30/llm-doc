@@ -22,8 +22,8 @@ import { ThemeToggle } from "./theme-toggle"
 const navItems = [
   { title: "Introduction", url: "#introduction" },
   { title: "Hugging Face", url: "#huggingface" },
-  { title: "Sorting Values", url: "#components" },
-  { title: "API Reference", url: "#api-reference" },
+  { title: "RAG", url: "#rag" },
+  { title: "Fine Tuning", url: "#fine_tuning" },
 ]
 
 export function AppSidebar() {

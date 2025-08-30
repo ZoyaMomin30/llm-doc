@@ -1,10 +1,11 @@
 import type { Metadata } from "next"
 import Introduction from "@/components/sections/introduction"
 import HuggingFace from "@/components/sections/huggingface"
-import ComponentsSection from "@/components/sections/components-section"
+import Rag from "@/components/sections/rag"
+import FineTuning from "@/components/sections/fine-tuning"
 
 export const metadata: Metadata = {
-  title: "Data Science Documentation",
+  title: "LLM Engineering Documentation",
   description: "Complete documentation for our library",
 }
 
@@ -15,7 +16,8 @@ export default function Home() {
         <Introduction />
       </div>
       <HuggingFace />
-      <ComponentsSection />
+      <Rag />
+      <FineTuning />
     </main>
   )
 }

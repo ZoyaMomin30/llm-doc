@@ -10,6 +10,20 @@ export default function Introduction() {
         <li>Introduction</li>
 
       </ul>
+      <h2 className="mb-4 mt-8 text-2xl font-semibold">Setting up the environment</h2>
+      <p className="mb-4">
+        Its better to create a virtual environment and to run things there: 
+        Run the following commands in your terminal and work in jupyter lab. 
+      </p>
+      <pre className="bg-muted p-4 rounded-md mb-4">
+        <code>cd &lt; path &gt;</code>
+        <br></br>
+        <code>python -m venv venv</code>
+        <br></br>
+        <code>source venv/bin/activate</code>
+        <br></br>
+        <code>jupyter lab</code>
+      </pre>
 
       <h2 className="mb-4 mt-8 text-2xl font-semibold">What is an LLM?</h2>
       <p className="mb-4">

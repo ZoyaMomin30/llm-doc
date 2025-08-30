@@ -1,3 +1,42 @@
+the file to make changes for the section layout is in :
+app/page.tsx
+
+the file to add the sidebar content will be 
+app/components/sidebar.tsx
+
+```
+to use grok 
+from groq import Groq
+
+MODEL = "llama-3.3-70b-versatile"
+
+load_dotenv(override=True)
+api_key = os.getenv('GROK_API_KEY')
+
+client = Groq(
+    api_key=os.environ.get("GROK_API_KEY"),
+)
+```
+
+for the list to be wrapped around the doc use this 
+```
+      <ul className="mb-4 list-inside list-disc space-y-1 whitespace-normal">
+        <li>
+          Normally, a model like GPT answers from its <b>pre-trained</b> knowledge
+          (which may be outdated or incomplete).
+        </li>
+        <li>
+          With RAG, the model is connected to an <b>external knowledge</b> source (like a
+          database, documents, or the web).
+        </li>
+        <li>
+          When you ask a question, the system first retrieves <b>relevant information</b>
+          from the <b>knowledge source</b>, and then the model uses that retrieved
+          information to generate the <b>final answer</b>.
+        </li>
+      </ul>
+```
+
 if a layout error like this :
 
 ChunkLoadError: Loading chunk app/layout failed.
